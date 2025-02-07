@@ -1,0 +1,146 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(309, 100%, 96%);
+    font-family: 'Work Sans', sans-serif; 
+}
+
+body img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.image-container {
+    position: absolute;
+    width: 100vw;
+    
+}
+
+.image-container  img{
+    height: 335px;
+    object-fit: cover;
+}
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 710px;
+    transform: translate(-50%, -50%);
+    background: hsl(0, 0%, 100%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+    border-radius: 15px; 
+}
+
+.overlay-content__icon-titulo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.overlay-content__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.overlay-content__titulo {
+    font-weight: 700;
+    font-size: 4rem;
+    color: hsl(292, 42%, 14%);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.overlay-content__pergunta,
+.overlay-content__resposta {
+    display: flex;
+    flex-direction: row; 
+    font-size: 20px; 
+    font-weight: 600;
+    color: hsl(292, 42%, 14%);
+    white-space: normal; 
+    flex-wrap: wrap; 
+    align-items: center; 
+}
+
+.overlay-content__pergunta {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.overlay-content__pergunta:hover {
+    color: hsl(292, 16%, 49%);
+}
+
+/* Estilo das respostas */
+.overlay-content__resposta p{
+    font-weight: 400;
+    font-size: 20px;
+    color: hsl(275, 50%, 60%);
+    margin-top: 10px;
+}
+
+.icon-plus-1,
+.icon-plus-2,
+.icon-plus-3,
+.icon-plus-4 {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: auto; 
+}
+
+.icon-plus-1:hover,
+.icon-plus-2:hover,
+.icon-plus-3:hover,
+.icon-plus-4:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.overlay-content__texto {
+   padding: auto;
+}
+
+hr {
+    border: 1px solid hsl(275, 100%, 97%); 
+}
+
+.attribution {
+    position: absolute; 
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: hsl(309, 100%, 30%);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.attribution a {
+    color: hsl(210, 100%, 45%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+    color: hsl(210, 100%, 35%);
+}
+
